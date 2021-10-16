@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+//ctr + shift + p
+
+//&display=swap
+
+
+
+@import mixins
+@import 'icons'
+// $maxWidth: 1440
+
+$maxWidthContainer: 930
+//+ 30px
+  
+  
+$md1: $maxWidthContainer + 12
+$md2: 991.98 
+$md3: 767.98
+$md4: 479.98
+
+
+$mainColor: #000000
+
+@import 'ui' 
+
+
+
+
+*
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+  font-family: Poppins, sans-serif;
+  font-size: 16px
+  font-weight: 400
+  color: $mainColor
+
+
+html,body
+  background: #8b5ceb
+
+
+
+  
+._container
+  max-width: $maxWidthContainer + px
+  padding: 0 15px
+  margin: 0 auto
+
+.wrapper 
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+  
+.page 
+	flex: 1 1 auto;
+
+button
+  border: none
+  cursor: pointer
+
+ul li
+  list-style: none
+
+a
+  text-decoration: none
+
+input
+  outline: none
+  border: none
+
+
+//-----------Componets import-----------------\\
+
+@import './modules/burger' 
+@import './components/area' 
+@import './components/counter' 
+
+
+
+
+
+
+
+//----------- Hacks  -----------------\\
+
+  //Line height 24  font-size 14    24/14 * 100% = 170%-line-height
+
+      // &__image 
+      //   display: block
+      //   padding: 0 0 140/230 * 100% 0
+      //   //висота картинки 140 ширина блока 230

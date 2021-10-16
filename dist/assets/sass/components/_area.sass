@@ -1,0 +1,23 @@
+.area
+    position: relative
+    z-index: 5
+    @include adaptiv-value('padding-top', 100, 80, 1)
+    &__container
+    &__body
+        display: flex
+        align-items: center
+        justify-content: center
+        flex-direction: column
+    &__textarea 
+        width: 100%
+        @include adaptiv-value('min-height', 400, 270, 1)
+        padding: 50px 30px 80px 30px
+        border-radius: 8px
+        box-shadow: 0 30px 50px rgba(30, 21, 49, 0.3)
+        font-weight: 500
+        resize: none
+        outline: none
+        border: none
+        transition: all 0.3s ease 0s
+        &:focus
+            @include adaptiv-value('font-size', 21, 18, 1)
